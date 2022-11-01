@@ -1,5 +1,5 @@
 import react from "react"
-import { Navbar } from "react-bootstrap"
+import { Navbar, Container } from "react-bootstrap"
 
 const NavbarStyle = {
   backgroundColor: "lightblue"
@@ -7,7 +7,9 @@ const NavbarStyle = {
 const Header = ({title}) => { 
     return(
         <Navbar style={NavbarStyle} variant="light">
-          <Navbar.Brand href="/">{title}</Navbar.Brand>
+          <Container>
+            <Navbar.Brand href="/">{title}</Navbar.Brand> 
+          </Container> 
         </Navbar>
     )
 };
